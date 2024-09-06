@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        li{
+            width: 2px;
+            height: 70px;
+            border: 2px solid black;
+        }
+        nav{
+            background:#0082e6 ;
+            height:80px;
+            width:100%;
+
+        }
+        nav ul{
+            float:right;
+            margin-right: 20px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        nav ul li{
+            display:inline-block;
+            line-height: 80px;
+            margin:auto;
+            border:auto;
+            width:auto;
+            height:auto;
+        }
+        nav ul li a{
+            color: white;
+            font-size:17px;
+            padding: 15px 20px;
+            border-radius:3px;
+            text-transform: uppercase;
+            text-decoration:none;
+        }
+        body{
+        margin:0;
+        padding:0;
+        font-family: Arial,hevetica,sans-serif;
+        font:16px;
+        color:white;
+    }
+    footer{
+        background-color: #343434;
+        padding:50px;
+    }
+    .contaioner{
+        width:1140px;
+        margin:auto;
+        display:flex;
+        justify-content:center;
+    }
+    .footer-content{
+        width:33.33%;
+    }
+    h3{
+        font-size:28px;
+        margin:15px;
+        text-align:center;
+    }
+    .footer-content p{
+        width:190px;
+        margin:auto;
+        padding:7px;
+    }
+    .footer-content ul{
+        text-align:center;
+    }
+    .list li{
+        width: auto;
+        text-align:center;
+        list-style-type: none;
+        padding:7px;
+        position:relative;
+    }
+    .list li ::before{
+        content:"";
+        position:absolute;
+        transform:translate(-50,-50);
+        left:50%;
+        top:100%;
+        width:0;
+        height:2px;
+        background: color #f18930;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width:70px;
+    }
+    .social-icon{
+        text-align:center;
+        padding:0;
+        margin:0;
+        list-style:none;
+    }
+    .social-icon li{
+        display:inline-block;
+        margin:0 10px;
+        border:none;
+    }
+    .social-icon a{
+        color:white;
+        font: 24px;
+        text-decoration:none;
+    }
+    .social-icon a:hover{
+        color:#f18930;
+    }
+    .social-icon i:hover{
+        color:#f18930;
+    }
+    .bottom-bar{
+        background:#f18930;
+        text-align:center;
+        padding:10px 0;
+        margin-top:50px; 
+    }
+    .bottom-bar p{
+        font-size:16px;
+            color:#343434;
+            margin: 0;
+            font: size 16px;
+            padding: 7px;
+    }         
+    </style>
+</head>
+<body>
+    <nav>
+        <label class="logo">WELCOME TO MY PAGE</label>
+        <UL>
+            <li><a href="#">home</a></li>
+            <li><a href="#">apply</a></li>
+            <li><a href="#">job</a></li>
+            <li><a href="#">result</a></li>
+            <li><a href="#">courses</a></li>
+        </UL>
+    </nav>
+    <img src="My Web Site.jpg"alt=""width="1350" height="650">
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+            <h3>Contact US</h3>
+            <p>Email:mfahadahmed2020@gmail.com</p>
+            <p>Cell Phone NO :+92 300-2451452</p>
+            <p>Orgnization Address:500 Victoria Centre Near Zainab Market A.H Road Saddar Karachi</p>
+        </div>
+        <div class="footer-content">
+            <h3>QUICK LINKS</h3>
+            <ul class="list">
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">PRODUCT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>FOLLOW US ON</h3>
+            <ul class="social-icons">
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/03002451452"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+            </div>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; 2000 Your Company All Right Reserved</p>
+    </footer>
+</body>
+</html> 
